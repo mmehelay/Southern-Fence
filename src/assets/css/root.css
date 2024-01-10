@@ -19,6 +19,7 @@
     --bodyFontSize: 1rem;
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+    --sectionPaddings: clamp(0.75rem, 7.82vw, 3.25rem) 1rem;
   }
   .cs-topper {
     font-size: var(--topperFontSize);
@@ -59,7 +60,7 @@
     text-decoration: none;
     width: auto;
     padding: 0 1.875rem;
-    color: #000;
+    color: #fff;
     background-color: var(--primary);
     display: inline-block;
     position: relative;
@@ -1126,13 +1127,13 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #cs-footer-841 {
+  #cs-footer-840 {
     padding: var(--sectionPadding);
     /* 30px - 50px */
     padding-bottom: clamp(1.875rem, 5vw, 3.125rem);
-    background-color: #fff;
+    background-color: #1a1a1a;
   }
-  #cs-footer-841 .cs-container {
+  #cs-footer-840 .cs-container {
     width: 100%;
     /* reset on tablet */
     max-width: 34.375rem;
@@ -1144,27 +1145,27 @@
     column-gap: 3rem;
     row-gap: 2rem;
   }
-  #cs-footer-841 .cs-logo-group {
+  #cs-footer-840 .cs-logo-group {
     /* takes up all the space, lets the other ul's wrap below it */
     width: 100%;
     position: relative;
   }
-  #cs-footer-841 .cs-logo {
+  #cs-footer-840 .cs-logo {
     width: 13.125rem;
     height: auto;
     margin: 0 0 1.5rem 0;
     display: block;
   }
-  #cs-footer-841 .cs-logo-img {
+  #cs-footer-840 .cs-logo-img {
     width: 50%;
     height: auto;
   }
-  #cs-footer-841 .cs-social {
+  #cs-footer-840 .cs-social {
     display: inline-flex;
     justify-content: flex-start;
-    gap: 0.75rem;
+    gap: 0.75em;
   }
-  #cs-footer-841 .cs-social-link {
+  #cs-footer-840 .cs-social-link {
     width: 2rem;
     height: 2rem;
     background-color: #484848;
@@ -1176,32 +1177,35 @@
     z-index: 1;
     transition: transform 0.3s, background-color 0.3s;
   }
-  #cs-footer-841 .cs-social-link:hover {
+  #cs-footer-840 .cs-social-link:hover {
     background-color: var(--primaryLight);
     transform: translateY(-0.1875rem);
   }
-  #cs-footer-841 .cs-social-img {
+  #cs-footer-840 .cs-social-link:hover .cs-social-img {
+    filter: grayscale(1) brightness(1000%);
+  }
+  #cs-footer-840 .cs-social-img {
     height: 0.75rem;
     width: auto;
     display: block;
   }
-  #cs-footer-841 .cs-header {
+  #cs-footer-840 .cs-header {
     font-size: 1.25rem;
     line-height: 1.5em;
     font-weight: 700;
     margin: 0 0 1.25rem 0;
-    color: var(--headerColor);
+    color: var(--bodyTextColorWhite);
     display: block;
     position: relative;
   }
-  #cs-footer-841 .cs-ul {
+  #cs-footer-840 .cs-ul {
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
   }
-  #cs-footer-841 .cs-ul-1 {
+  #cs-footer-840 .cs-ul-1 {
     width: 100%;
     max-width: 21.875rem;
     flex-direction: row;
@@ -1209,90 +1213,90 @@
     flex-wrap: wrap;
     column-gap: 2rem;
   }
-  #cs-footer-841 .cs-ul-1 .cs-li {
+  #cs-footer-840 .cs-ul-1 .cs-li {
     width: 44%;
   }
-  #cs-footer-841 .cs-li {
+  #cs-footer-840 .cs-li {
     list-style: none;
   }
-  #cs-footer-841 .cs-link {
+  #cs-footer-840 .cs-link {
     font-size: 1rem;
     text-decoration: none;
     line-height: 1.5em;
     text-align: left;
-    color: var(--bodyTextColor);
+    color: #bababa;
     display: inline-flex;
     align-items: flex-start;
     gap: 0.5rem;
     transition: color 0.3s;
   }
-  #cs-footer-841 .cs-link:hover {
+  #cs-footer-840 .cs-link:hover {
     color: var(--primaryLight);
   }
-  #cs-footer-841 .cs-icon {
+  #cs-footer-840 .cs-icon {
     width: 1.25rem;
     height: auto;
     margin-right: 0.125rem;
     display: block;
   }
-  #cs-footer-841 .cs-bottom {
+  #cs-footer-840 .cs-bottom {
     text-align: center;
     width: 100%;
     max-width: 80rem;
     /* 48px - 64px */
     margin: clamp(3rem, 7vw, 4rem) auto 0;
     padding-top: 1.5rem;
-    border-top: 1px solid #e6e6e6;
+    border-top: 1px solid #484848;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.75rem;
   }
-  #cs-footer-841 .cs-credit,
-  #cs-footer-841 .cs-bottom-link,
-  #cs-footer-841 .cs-credit-link {
+  #cs-footer-840 .cs-credit,
+  #cs-footer-840 .cs-bottom-link,
+  #cs-footer-840 .cs-credit-link {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     line-height: 1.5em;
     text-decoration: none;
     width: auto;
     margin: 0;
-    color: var(--bodyTextColor);
+    color: #bababa;
     display: inline-block;
     position: relative;
     transition: color 0.3s;
   }
-  #cs-footer-841 .cs-credit {
+  #cs-footer-840 .cs-credit {
     width: 100%;
   }
-  #cs-footer-841 .cs-credit-link {
+  #cs-footer-840 .cs-credit-link {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     line-height: 1.5em;
     text-decoration: none;
     width: auto;
     margin: 0;
-    color: var(--bodyTextColor);
+    color: #bababa;
     display: inline-block;
     position: relative;
   }
-  #cs-footer-841 .cs-credit-link:hover {
+  #cs-footer-840 .cs-credit-link:hover {
     color: var(--primary);
   }
-  #cs-footer-841 .cs-bottom-links {
+  #cs-footer-840 .cs-bottom-links {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  #cs-footer-841 .cs-bottom-link {
+  #cs-footer-840 .cs-bottom-link {
     display: flex;
     align-items: center;
   }
-  #cs-footer-841 .cs-bottom-link:hover {
+  #cs-footer-840 .cs-bottom-link:hover {
     color: var(--primary);
   }
-  #cs-footer-841 .cs-bottom-link:last-of-type:before {
+  #cs-footer-840 .cs-bottom-link:last-of-type:before {
     /* separator */
     content: "";
     width: 1px;
@@ -1305,79 +1309,44 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #cs-footer-841 .cs-container {
+  #cs-footer-840 .cs-container {
     max-width: 80rem;
     /* 48px - 64px */
     row-gap: clamp(3rem, 7vw, 4rem);
   }
-  #cs-footer-841 .cs-bottom {
+  #cs-footer-840 .cs-bottom {
     justify-content: space-between;
     flex-wrap: nowrap;
   }
-  #cs-footer-841 .cs-credit {
+  #cs-footer-840 .cs-credit {
     text-align: left;
   }
-  #cs-footer-841 .cs-bottom-links {
+  #cs-footer-840 .cs-bottom-links {
     justify-content: flex-end;
   }
 }
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #cs-footer-841 .cs-container {
+  #cs-footer-840 .cs-container {
     /* pushes all flex children to the top */
     align-items: flex-start;
     justify-content: flex-end;
     flex-wrap: nowrap;
   }
-  #cs-footer-841 .cs-logo-group {
+  #cs-footer-840 .cs-logo-group {
     width: 30%;
     max-width: 25rem;
     /* pushes everything to the right of it as far as possible in a flexbox */
     margin-right: auto;
   }
-  #cs-footer-841 .cs-text {
+  #cs-footer-840 .cs-text {
     width: 100%;
   }
-  #cs-footer-841 .cs-social {
+  #cs-footer-840 .cs-social {
     flex-direction: row;
     position: relative;
     top: auto;
     right: auto;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #cs-footer-841 {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-  body.dark-mode #cs-footer-841 .cs-logo-img {
-    filter: grayscale(1) brightness(1000%);
-  }
-  body.dark-mode #cs-footer-841 .cs-text,
-  body.dark-mode #cs-footer-841 .cs-header,
-  body.dark-mode #cs-footer-841 .cs-link,
-  body.dark-mode #cs-footer-841 .cs-credit-link,
-  body.dark-mode #cs-footer-841 .cs-bottom-link,
-  body.dark-mode #cs-footer-841 .cs-credit {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #cs-footer-841 .cs-credit-link:hover,
-  body.dark-mode #cs-footer-841 .cs-bottom-link:hover,
-  body.dark-mode #cs-footer-841 .cs-link:hover {
-    color: var(--primary);
-  }
-  body.dark-mode #cs-footer-841 .cs-text,
-  body.dark-mode #cs-footer-841 .cs-link,
-  body.dark-mode #cs-footer-841 .cs-credit,
-  body.dark-mode #cs-footer-841 .cs-credit-link,
-  body.dark-mode #cs-footer-841 .cs-bottom-link {
-    opacity: 0.8;
-  }
-  body.dark-mode #cs-footer-841 .cs-icon {
-    filter: grayscale(1) brightness(1000%);
-  }
-  body.dark-mode #cs-footer-841 .cs-bottom {
-    border-color: rgba(255, 255, 255, 0.1);
   }
 }
 
