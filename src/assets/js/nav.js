@@ -24,10 +24,13 @@ function ariaExpanded() {
 }
 
 // mobile nav toggle code
-const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-dropdown'));
+const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-dropdown, cs-tertiary'));
 for (const item of dropDowns) {
 	const onClick = () => {
 		item.classList.toggle('cs-active');
 	};
 	item.addEventListener('click', onClick);
 }
+
+
+

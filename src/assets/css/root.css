@@ -547,6 +547,43 @@
   #cs-navigation .cs-button-solid {
     display: none;
   }
+  .cs-dropdown.cs-active .cs-drop-ul.cs-services {
+    padding-top: 0 !important;
+  }
+  .cs-services {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: height 0.3s, opacity 0.3s, visibility 0.3s;
+  }
+  .cs-services .cs-drop-li {
+    background-color: var(--primary);
+    padding: 0.5rem 0;
+  }
+  .cs-tertiary {
+    width: 100%;
+    background-color: var(--primary);
+  }
+  .cs-tertiary-ul {
+    width: 100%;
+    background-color: #061623;
+  }
+  .cs-tertiary-ul .cs-tertiary-li {
+    line-height: initial;
+    margin: 0 !important;
+  }
+  .cs-tertiary-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+  }
+  .cs-tertiary-link .cs-drop-icon {
+    right: 0.625rem;
+  }
 }
 /* Dark Mode */
 @media only screen and (max-width: 63.9375rem) {
@@ -588,6 +625,11 @@
     opacity: 1;
     visibility: visible;
   }
+  #cs-navigation .cs-dropdown.cs-active .cs-services {
+    height: auto !important;
+    opacity: 1;
+    visibility: visible;
+  }
   #cs-navigation .cs-dropdown.cs-active .cs-drop-link {
     opacity: 1;
   }
@@ -622,10 +664,38 @@
   #cs-navigation .cs-drop-li {
     list-style: none;
   }
-  #cs-navigation .cs-li-link.cs-drop-link {
-    /* 14px - 16px */
-    font-size: clamp(0.875rem, 2vw, 1.25rem);
-    color: #fff;
+  #cs-navigation .cs-drop-link, #cs-navigation .cs-li-link {
+    width: auto;
+    color: #000 !important;
+    text-decoration: none;
+    margin: 0;
+    color: inherit;
+    display: inline-block;
+    position: relative;
+  }
+  #cs-navigation .cs-drop-link:before, #cs-navigation .cs-li-link:before {
+    /* active state underline */
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    opacity: 1;
+    position: absolute;
+    display: none;
+    bottom: -0.125rem;
+    left: 0;
+  }
+  #cs-navigation .cs-drop-link.cs-active:before, #cs-navigation .cs-li-link.cs-active:before {
+    display: block;
+  }
+  #cs-navigation .cs-drop-link {
+    font-size: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+    color: #fff !important;
+  }
+  #cs-navigation .cs-dropdown.cs-active .cs-drop-ul.cs-services {
+    padding-top: 0 !important;
   }
 }
 /* Desktop - 1024px */
@@ -641,6 +711,11 @@
     visibility: visible;
     transform: scaleY(1);
   }
+  #cs-navigation .cs-dropdown:hover .cs-services {
+    transform: scaleY(1);
+    opacity: 1;
+    visibility: visible;
+  }
   #cs-navigation .cs-dropdown:hover .cs-drop-li {
     opacity: 1;
     transform: translateY(0);
@@ -649,6 +724,24 @@
     width: 0.9375rem;
     height: auto;
     display: inline-block;
+  }
+  #cs-navigation .cs-drop-link {
+    white-space: nowrap;
+    width: 100%;
+    font-size: 0.9375rem;
+    line-height: 1.5em;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    color: var(--bodyTextColor);
+    display: block;
+    transition: color 0.3s, background-color 0.3s;
+  }
+  #cs-navigation .cs-drop-link:hover {
+    background-color: #f7f7f7;
+  }
+  #cs-navigation .cs-drop-link:before {
+    display: none;
   }
   #cs-navigation .cs-drop-ul {
     min-width: 12.5rem;
@@ -667,6 +760,26 @@
     transform: scaleY(0);
     transition: transform 0.3s, visibility 0.3s, opacity 0.3s;
     transform-origin: top;
+  }
+  #cs-navigation .cs-services {
+    min-width: 12.5rem;
+    margin: 0;
+    padding: 0rem 0 0;
+    background-color: #fff;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-bottom: 5px solid var(--primary);
+    display: block;
+    columns: 1;
+    position: absolute;
+    top: 100%;
+    z-index: -1;
+    left: 0%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s, visibility 0.3s, opacity 0.3s;
   }
   #cs-navigation .cs-drop-li {
     font-size: 1rem;
@@ -707,23 +820,58 @@
   #cs-navigation .cs-drop-li:nth-of-type(9) {
     transition-delay: 0.45s;
   }
-  #cs-navigation .cs-li-link.cs-drop-link {
-    font-size: 1rem;
-    line-height: 1.5em;
-    text-decoration: none;
+  #cs-navigation .cs-tertiary {
+    position: relative;
+  }
+  #cs-navigation .cs-tertiary:hover .cs-tertiary-ul {
+    transform: scaleY(1);
+    height: auto;
+  }
+  #cs-navigation .cs-services {
+    overflow: visible;
+  }
+  #cs-navigation .cs-tertiary-ul {
+    min-width: 12.5rem;
+    margin: 0;
+    height: 0;
+    padding: 0rem 0 0;
+    background-color: #fff;
+    overflow: hidden;
+    opacity: 1;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: block;
+    columns: 1;
+    position: absolute;
+    top: 0%;
+    z-index: -1;
+    left: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s, visibility 0.3s, opacity 0.3s;
+  }
+  #cs-navigation .cs-tertiary-li {
+    margin-left: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  #cs-navigation .cs-tertiary-link {
     white-space: nowrap;
     width: 100%;
-    /* prevents padding and border from affecting height and width */
+    font-size: 0.9375rem;
+    line-height: 1.5em;
     box-sizing: border-box;
-    padding: 0.75rem;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
     color: var(--bodyTextColor);
     display: block;
     transition: color 0.3s, background-color 0.3s;
   }
-  #cs-navigation .cs-li-link.cs-drop-link:hover {
+  #cs-navigation .cs-tertiary-link:hover {
     background-color: #f7f7f7;
   }
-  #cs-navigation .cs-li-link.cs-drop-link:before {
+  #cs-navigation .cs-tertiary-link:before {
+    display: none;
+  }
+  .hamburger-menu {
     display: none;
   }
 }
