@@ -1115,65 +1115,67 @@
 
 /* Dark Mode Desktop */
 @media only screen and (min-width: 1024px) {
-  body.dark-mode #navigation {
-    .background-color-div {
-      background-color: var(--dark);
-    }
-    
-
-    .logo {
-      .light {
-        display: none;
-      }
-
-      .dark {
-        display: block !important;
-      }
-    }
-
-    #navbar-menu ul li {
-      a {
-        color: #fff;
-        transition: color 0.3s;
-
-        &:before {
-          background: var(--accent);
-        }
-
-        &.button-solid {
-          background-color: var(--primaryShade);
-          color: var(--primary);
-
-          &:before {
-            background: #fff;
-          }
-
-          &:hover {
-            color: var(--primary);
-          }
-        }
-
-        &:hover, &.active {
-          color: var(--primaryShade);
-        }
-      }
-
-      .cs-li-link {
-        color: #fff;
-      }
-
-      .cs-drop-link:hover {
-        background-color: var(--medium);
-      }
-
-     
-
-      .cs-drop-ul {
-        background-color: var(--dark);
-      }
-    }
+  body.dark-mode #navigation .background-color-div {
+    background-color: var(--dark);
   }
-}                            
+  body.dark-mode #navigation .logo .light {
+    display: none;
+  }
+  body.dark-mode #navigation .logo .dark {
+    display: block !important;
+  }
+  body.dark-mode #navigation #navbar-menu ul li a {
+    color: #fff;
+    transition: color 0.3s;
+  }
+  body.dark-mode #navigation #navbar-menu ul li a:before {
+    background: var(--accent);
+  }
+  body.dark-mode #navigation #navbar-menu ul li a.button-solid {
+    background-color: var(--primaryShade);
+    color: var(--primary);
+  }
+  body.dark-mode #navigation #navbar-menu ul li a.button-solid:before {
+    background: #fff;
+  }
+  body.dark-mode #navigation #navbar-menu ul li a.button-solid:hover {
+    color: var(--primary);
+  }
+  body.dark-mode #navigation #navbar-menu ul li a:hover {
+    color: var(--primaryShade);
+  }
+  body.dark-mode #navigation #navbar-menu ul li a.active {
+    color: var(--primaryShade);
+  }
+  body.dark-mode #navigation #navbar-menu ul li .cs-li-link {
+    color: #fff;
+  }
+  body.dark-mode #navigation #navbar-menu ul li .cs-drop-link:hover {
+    background-color: var(--medium);
+  }
+  body.dark-mode #navigation #navbar-menu ul li .cs-drop-icon {
+    filter: grayscale(1) brightness(1000%);
+  }
+  body.dark-mode #navigation #navbar-menu ul li .cs-drop-ul {
+    background-color: var(--dark);
+  }
+  body.dark-mode #navigation #navbar-menu ul .cs-services {
+    background-color: var(--dark);
+  }
+  body.dark-mode #navigation #navbar-menu ul .cs-tertiary-link {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #navigation #navbar-menu ul .cs-tertiary-ul {
+    background-color: var(--dark);
+  }
+  body.dark-mode #navigation #navbar-menu ul .cs-tertiary-link {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #navigation #navbar-menu ul .cs-tertiary-link:hover {
+    background-color: var(--medium);
+    cursor: pointer;
+  }
+}                          
 
 /*-- -------------------------- -->
 <---   Interior Page Header     -->

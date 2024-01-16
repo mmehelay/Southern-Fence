@@ -950,7 +950,10 @@
   body.dark-mode #navigation #navbar-menu ul li a.button-solid:hover {
     color: var(--primary);
   }
-  body.dark-mode #navigation #navbar-menu ul li a:hover, body.dark-mode #navigation #navbar-menu ul li a.active {
+  body.dark-mode #navigation #navbar-menu ul li a:hover {
+    color: var(--primaryShade);
+  }
+  body.dark-mode #navigation #navbar-menu ul li a.active {
     color: var(--primaryShade);
   }
   body.dark-mode #navigation #navbar-menu ul li .cs-li-link {
@@ -959,8 +962,27 @@
   body.dark-mode #navigation #navbar-menu ul li .cs-drop-link:hover {
     background-color: var(--medium);
   }
+  body.dark-mode #navigation #navbar-menu ul li .cs-drop-icon {
+    filter: grayscale(1) brightness(1000%);
+  }
   body.dark-mode #navigation #navbar-menu ul li .cs-drop-ul {
     background-color: var(--dark);
+  }
+  body.dark-mode #navigation #navbar-menu ul .cs-services {
+    background-color: var(--dark);
+  }
+  body.dark-mode #navigation #navbar-menu ul .cs-tertiary-link {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #navigation #navbar-menu ul .cs-tertiary-ul {
+    background-color: var(--dark);
+  }
+  body.dark-mode #navigation #navbar-menu ul .cs-tertiary-link {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #navigation #navbar-menu ul .cs-tertiary-link:hover {
+    background-color: var(--medium);
+    cursor: pointer;
   }
 }
 /*-- -------------------------- -->
