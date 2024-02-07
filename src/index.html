@@ -8,7 +8,7 @@ eleventyNavigation:
   order: 100
 ---
 
-{% extends "layouts/base.html" %}
+{% extends "layouts/base2.html" %}
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/local.css" />
@@ -35,87 +35,614 @@ eleventyNavigation:
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    Hero                      -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
 
-    <section id="hero">
-        <div class="cs-container">
-            <div class="cs-flex-group">
-                <span class="cs-topper">mountain hiking society</span>
-                <h1 class="cs-title">Explore the World with Exciting People</h1>
-                <p class="cs-text">
-                    Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Nibh tortor id aliquet lectus proin nibh condimentum.
-                </p>
-                <a href="/about" class="cs-button-solid">Explore More</a>
-                <a href="/contact" class="cs-button-transparent">
-                    <img
-                    class="cs-img"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
-                    alt="play icon"
-                    width="17"
-                    height="17" />
-                    Get in Touch
-                </a>
+<section id="hero">
+    <div class="hero-content">
+        <div class="heroText">
+            <h1 id="home-h">FENCE INSTALLATION COMPANY</h1>
+            <p>
+                At Southern Fence, we believe in doing things right the first time, every time. With our expertise and dedication to customer satisfaction, we guarantee an amazing fencing experience that exceeds your expectations.
+            </p>
+            <div class="buttons">
+                <a href="/contact" class="cs-button-1" aria-label="read more about us">Contact Us</a>
+                                
             </div>
         </div>
-
-        <!-- Background Image -->
-        <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
-            <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="new home" width="2500" height="1667" loading="eager">
+    </div>
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images/photo1.jpeg">
+        <source media="(min-width: 601px)" srcset="/assets/images/photo1.jpeg">
+        <img aria-hidden="true" decoding="async" src="/assets/images/photo1.jpeg" alt="appliance" width="275" height="132">
         </picture>
-    </section>
+</section>
 
-    <!-- ============================================ -->
-    <!--                  Services                    -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
 
-    <section id="services" class="services">
-        <!-- Get Icons From flaticon.com -->
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service1.svg"
-                alt="appliance"
-                width="48"
-                height="48" />
-            </picture>
-            <h2>Service 1</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
+<section id="services" class="services">
+    <!-- Get Icons From flaticon.com -->
+    <div class="card">
+        <picture>
+            <img class="light" aria-hidden="true" decoding="async" src="/assets/images/icons8-fence.svg" alt="icon" width="48" height="48">
+            <img class="dark" aria-hidden="true" decoding="async" src="/assets/images/icons8-fence.svg" alt="icon" width="48" height="48">
+        </picture>
+        <h2>Fence Installation</h2>
+        <p>
+            We create beautifully designed walk-in, grab-in, and utility closet organization systems to help organize your wardrobe and life.
+    </div>
+    <div class="card">
+        <picture>
+            <img class="light" aria-hidden="true" decoding="async" src="/assets/images/icons8-repair.svg" alt="icon" width="48" height="48">
+            <img class="dark" aria-hidden="true" decoding="async" src="/assets/images/icons8-repair.svg" alt="icon" width="48" height="48">
+        </picture>
+        <h2>Fence Repair</h2>
+        <p>
+            Choose from an assortment of shelving, drawers, cubby spaces, and other elements to create your ideal customized pantry.
+        </p>
+    </div>
+    <div class="card">
+        <picture>
+            <img class="light" aria-hidden="true" decoding="async" src="/assets/images/icons8-front-gate-open.svg" alt="icon" width="48" height="48">
+            <img class="dark" aria-hidden="true" decoding="async" src="/assets/images/icons8-front-gate-open.svg" alt="icon" width="48" height="48">
+        </picture>
+        <h2>Gate Operators</h2>
+        <p>
+            Add more space to your laundry room or mud room with custom shelving and storage space designed specifically for your space.
+        </p>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Side By Side                -->
+<!-- ============================================ -->
+
+<section id="sbs-1585">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/photo3.jpeg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="/assets/images/photo3.jpeg">
+            <img loading="lazy" decoding="async" src="/assets/images/photo3.jpeg" alt="models" width="586" height="690">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">About Us</span>
+            <h2 class="cs-title">Fence Installation Done Right</h2>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <div class="wrapper">
+                        <span class="cs-item-number">01</span>
+                        <h3 class="cs-h3">
+                            Expert Craftsmanship
+                        </h3>
+                    </div>
+                    <p class="cs-item-text">
+                        With a team of skilled professionals who are passionate about their work, we deliver expert craftsmanship on every project.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <div class="wrapper">
+                        <span class="cs-item-number">02</span>
+                        <h3 class="cs-h3">
+                            Exceptional Service
+                        </h3>
+                    </div>
+                    <p class="cs-item-text">
+                        We believe in open communication, transparent pricing, and personalized attention to every client.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <div class="wrapper">
+                        <span class="cs-item-number">03</span>
+                        <h3 class="cs-h3">
+                            Customer Satisfaction
+                        </h3>
+                    </div>
+                    <p class="cs-item-text">
+                       We go above and beyond to ensure that every aspect of your experience with Southern Fence exceeds your expectations.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <div class="wrapper">
+                        <span class="cs-item-number">04</span>
+                        <h3 class="cs-h3">
+                            Personalized Solutions
+                        </h3>
+                    </div>
+                    <p class="cs-item-text">
+                       We recognize that your property is as unique as you are. That's why we offer personalized solutions tailored to your specific requirements and preferences.
+                    </p>
+                </li>
+            </ul>
+            <a href="/about" class="cs-button-solid">About Us</a>
         </div>
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service2.svg"
-                alt="appliance"
-                width="48"
-                height="48" />
-            </picture>
-            <h2>Service 2</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-1168">
+    <div class="cs-container">
+      <div class="cs-content">
+        <span class="cs-topper">Selection</span>
+        <h2 class="cs-title">Our Fencing Options</h2>
+        <p class="cs-text">
+         At Southern Fence, we offer a diverse range of high-quality fencing solutions to meet your needs and preferences. Explore our selection below:
+        </p>
+      </div>
+      <ul class="cs-card-group">
+        <li class="cs-item">
+          <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source
+                  media="(max-width: 600px)"
+                  srcset="/assets/images/chain.jpeg">
+            <!--Tablet and above Image-->
+            <source
+                  media="(min-width: 601px)"
+                  srcset="/assets/images/chain.jpeg">
+            <img
+                  loading="lazy"
+                  decoding="async"
+                  src="/assets/images/chain.jpeg"
+                  alt="mechanic"
+                  width="413"
+                  height="240"
+                  aria-hidden="true">
+          </picture>
+          <div class="cs-info">
+            <h3 class="cs-h3">Chain Link Fence</h3>
+            <p class="cs-item-text">
+              Ideal for both residential and commercial properties, our chain link fences offer durability, security, and low maintenance. 
+            </p>
+          
+          </div>
+        </li>
+        <li class="cs-item">
+          <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source
+                  media="(max-width: 600px)"
+                  srcset="/assets/images/wood.jpeg">
+            <!--Tablet and above Image-->
+            <source
+                  media="(min-width: 601px)"
+                  srcset="/assets/images/wood.jpeg">
+            <img
+                  loading="lazy"
+                  decoding="async"
+                  src="/assets/images/wood.jpeg"
+                  alt="mechanic"
+                  width="413"
+                  height="240"
+                  aria-hidden="true">
+          </picture>
+          <div class="cs-info">
+            <h3 class="cs-h3">Wood Fence</h3>
+            <p class="cs-item-text">
+            Our wood fences are crafted from premium materials to withstand the elements and enhance the aesthetic appeal of your home.
+            </p>
+       
+          </div>
+        </li>
+        <li class="cs-item">
+          <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source
+                  media="(max-width: 600px)"
+                  srcset="/assets/images/vinyl.jpeg">
+            <!--Tablet and above Image-->
+            <source
+                  media="(min-width: 601px)"
+                  srcset="/assets/images/vinyl.jpeg">
+            <img
+                  loading="lazy"
+                  decoding="async"
+                  src="/assets/images/vinyl.jpeg"
+                  alt="mechanic"
+                  width="413"
+                  height="240"
+                  aria-hidden="true">
+          </picture>
+          <div class="cs-info">
+            <h3 class="cs-h3">Vinyl Fence</h3>
+            <p class="cs-item-text">
+              Durable, weather-resistant, and available in a variety of styles, vinyl fences offer privacy and elegance for years to come.
+            </p>
+
+          </div>
+        </li>
+        <li class="cs-item">
+          <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source
+                  media="(max-width: 600px)"
+                  srcset="/assets/images/privacy.jpeg">
+            <!--Tablet and above Image-->
+            <source
+                  media="(min-width: 601px)"
+                  srcset="/assets/images/privacy.jpeg">
+            <img
+                  loading="lazy"
+                  decoding="async"
+                  src="/assets/images/privacy.jpeg"
+                  alt="mechanic"
+                  width="413"
+                  height="240"
+                  aria-hidden="true">
+          </picture>
+          <div class="cs-info">
+            <h3 class="cs-h3">Privacy Fence</h3>
+            <p class="cs-item-text">
+            Create a peaceful retreat in your backyard with our privacy fences. whether you prefer the classic look of wood or the sleek design of vinyl we got you covered.
+            </p>
+    
+          </div>
+        </li>
+        <li class="cs-item">
+          <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source
+                  media="(max-width: 600px)"
+                  srcset="/assets/images/metal.jpeg">
+            <!--Tablet and above Image-->
+            <source
+                  media="(min-width: 601px)"
+                  srcset="/assets/images/metal.jpeg">
+            <img
+                  loading="lazy"
+                  decoding="async"
+                  src="/assets/images/metal.jpeg"
+                  alt="mechanic"
+                  width="413"
+                  height="240"
+                  aria-hidden="true">
+          </picture>
+          <div class="cs-info">
+            <h3 class="cs-h3">Metal Fence</h3>
+            <p class="cs-item-text">
+              Constructed from steel or aluminum, these fences provide security and durability while adding a modern touch to your property.
+            </p>
+           
+          </div>
+        </li>
+        <li class="cs-item">
+          <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source
+                  media="(max-width: 600px)"
+                  srcset="/assets/images/pool.jpeg">
+            <!--Tablet and above Image-->
+            <source
+                  media="(min-width: 601px)"
+                  srcset="/assets/images/pool.jpeg">
+            <img
+                  loading="lazy"
+                  decoding="async"
+                  src="/assets/images/pool.jpeg"
+                  alt="mechanic"
+                  width="413"
+                  height="240"
+                  aria-hidden="true">
+          </picture>
+          <div class="cs-info">
+            <h3 class="cs-h3">Pool Fence</h3>
+            <p class="cs-item-text">
+              Designed to meet safety regulations and guidelines, our pool fences offer peace of mind while enhancing the aesthetics of your pool area.
+            </p>
+   
+          </div>
+        </li>
+        <li class="cs-item">
+          <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source
+                  media="(max-width: 600px)"
+                  srcset="/assets/images/Aluminum.jpeg">
+            <!--Tablet and above Image-->
+            <source
+                  media="(min-width: 601px)"
+                  srcset="/assets/images/Aluminum.jpeg">
+            <img
+                  loading="lazy"
+                  decoding="async"
+                  src="/assets/images/Aluminum.jpeg"
+                  alt="mechanic"
+                  width="413"
+                  height="240"
+                  aria-hidden="true">
+          </picture>
+          <div class="cs-info">
+            <h3 class="cs-h3">Aluminum Fence</h3>
+            <p class="cs-item-text">
+              Combining strength, elegance, and versatility, our aluminum fences are a popular choice for both residential and commercial properties.
+            </p>
+          </div>
+        </li>
+    
+      </ul>
+    </div>
+</section>
+
+
+<!-- ============================================ -->
+<!--                   Services                   -->
+<!-- ============================================ -->
+
+<section id="services-18">
+    <div class="cs-container">
+      <div class="cs-content">
+        <span class="cs-topper">Locations</span>
+        <h2 class="cs-title">Areas We Service</h2>
+       
+     
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="/assets/images/icons8-location.svg" loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
+                </picture>
+                <!-- Text Grouped For Flexbox-->
+                <div class="cs-text-group">
+                    <h3 class="cs-h3">Beaufort</h3>
+                    <p class="cs-item-text">Enhance the beauty and security of your Beaufort property with our expert fencing solutions.</p>
+                    <a href="/Beaufort" class="cs-link">
+              Read More
+              <img
+                    class="cs-arrow"
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/red-arrow-right.svg"
+                    alt="icon"
+                    width="20"
+                    height="20"
+                    aria-hidden="true">
+            </a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="/assets/images/icons8-location.svg" loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
+                </picture>
+                <!-- Text Grouped For Flexbox-->
+                <div class="cs-text-group">
+                    <h3 class="cs-h3">Hardeeville</h3>
+                    <p class="cs-item-text">Trust Southern Fence to provide top-quality fencing options to protect and beautify your Hardeeville home or business.</p>
+                     <a href="/Hardeeville" class="cs-link">
+              Read More
+              <img
+                    class="cs-arrow"
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/red-arrow-right.svg"
+                    alt="icon"
+                    width="20"
+                    height="20"
+                    aria-hidden="true">
+            </a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="/assets/images/icons8-location.svg" loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
+                </picture>
+                <!-- Text Grouped For Flexbox-->
+                <div class="cs-text-group">
+                    <h3 class="cs-h3">Okatie</h3>
+                    <p class="cs-item-text">From residential neighborhoods to commercial developments, we offer comprehensive fencing services to Okatie and surrounding areas.</p>
+                     <a href="/Okatie" class="cs-link">
+              Read More
+              <img
+                    class="cs-arrow"
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/red-arrow-right.svg"
+                    alt="icon"
+                    width="20"
+                    height="20"
+                    aria-hidden="true">
+            </a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="/assets/images/icons8-location.svg" loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
+                </picture>
+                <!-- Text Grouped For Flexbox-->
+                <div class="cs-text-group">
+                    <h3 class="cs-h3">Bluffton</h3>
+                    <p class="cs-item-text">Whether you're looking for a stylish wood fence or a durable chain-link option, Southern Fence has you covered in Bluffton.</p>
+                     <a href="/Bluffton" class="cs-link">
+              Read More
+              <img
+                    class="cs-arrow"
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/red-arrow-right.svg"
+                    alt="icon"
+                    width="20"
+                    height="20"
+                    aria-hidden="true">
+            </a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="/assets/images/icons8-location.svg" loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
+                </picture>
+                <!-- Text Grouped For Flexbox-->
+                <div class="cs-text-group">
+                    <h3 class="cs-h3">Hilton Head</h3>
+                    <p class="cs-item-text">Transform your Hilton Head property with our wide range of fencing options designed to meet your unique needs and preferences.</p>
+                     <a href="/Hilton-Head" class="cs-link">
+              Read More
+              <img
+                    class="cs-arrow"
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/red-arrow-right.svg"
+                    alt="icon"
+                    width="20"
+                    height="20"
+                    aria-hidden="true">
+            </a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="/assets/images/icons8-location.svg" loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
+                </picture>
+                <!-- Text Grouped For Flexbox-->
+                <div class="cs-text-group">
+                    <h3 class="cs-h3">Summerville</h3>
+                    <p class="cs-item-text"> Residents and businesses in Summerville can rely on Southern Fence for professional installation and exceptional service.</p>
+                     <a href="/Summerville-Fence-Company" class="cs-link">
+              Read More
+              <img
+                    class="cs-arrow"
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/red-arrow-right.svg"
+                    alt="icon"
+                    width="20"
+                    height="20"
+                    aria-hidden="true">
+            </a>
+                </div>
+            </li>
+        </ul>
+       
+    </div>
+</section>
+                                
+
+
+
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+<section id="gallery-1446">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Gallery</span>
+                <h2 class="cs-title">Our Photo Gallery</h2>
+            </div>
         </div>
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service3.svg"
-                alt="appliance"
-                width="48"
-                height="48" />
+        <!--Gallery-->
+        <div class="cs-gallery">
+            <!--Picture 1-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="/assets/images/Photo2.jpeg">
+                <source media="(min-width: 601px)" srcset="/assets/images/Photo2.jpeg">
+                <img loading="lazy" decoding="async" src="/assets/images/Photo2.jpeg" alt="gallery" width="305" height="400">
             </picture>
-            <h2>Service 3</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
+            <!--Picture 2-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="/assets/images/Photo3.jpeg">
+                <source media="(min-width: 601px)" srcset="/assets/images/Photo3.jpeg">
+                <img loading="lazy" decoding="async" src="/assets/images/Photo3.jpeg" alt="gallery" width="305" height="400">
+            </picture>
+            <!--Picture 3-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="/assets/images/Photo4.jpeg">
+                <source media="(min-width: 601px)" srcset="/assets/images/Photo4.jpeg">
+                <img loading="lazy" decoding="async" src="/assets/images/Photo4.jpeg" alt="gallery" width="305" height="400">
+            </picture>
+            <!--Picture 4-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="/assets/images/Photo5.jpeg">
+                <source media="(min-width: 601px)" srcset="/assets/images/Photo5.jpeg">
+                <img loading="lazy" decoding="async" src="/assets/images/Photo5.jpeg" alt="gallery" width="305" height="400">
+            </picture>
+            <!--Picture 5-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="/assets/images/Photo6.jpeg">
+                <source media="(min-width: 601px)" srcset="/assets/images/Photo6.jpeg">
+                <img loading="lazy" decoding="async" src="/assets/images/Photo6.jpeg" alt="gallery" width="305" height="400">
+            </picture>
+            <!--Picture 6-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="/assets/images/Photo7.jpeg">
+                <source media="(min-width: 601px)" srcset="/assets/images/Photo7.jpeg">
+                <img loading="lazy" decoding="async" src="/assets/images/Photo7.jpeg" alt="gallery" width="305" height="400">
+            </picture>
+            <!--Picture 7-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="/assets/images/Photo8.jpeg">
+                <source media="(min-width: 601px)" srcset="/assets/images/Photo8.jpeg">
+                <img loading="lazy" decoding="async" src="/assets/images/Photo8.jpeg" alt="gallery" width="305" height="400">
+            </picture>
+            <!--Picture 8-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="/assets/images/Privacy.jpeg">
+                <source media="(min-width: 601px)" srcset="/assets/images/Privacy.jpeg">
+                <img loading="lazy" decoding="async" src="/assets/images/Privacy.jpeg" alt="gallery" width="305" height="400">
+            </picture>
         </div>
-    </section>
+        <a href="/projects" class="cs-button-1" aria-label="read more about us">Our Photo Gallery</a>
+                                
+    </div>
+</section>
+                                
+
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews-1670">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Testimonials</span>
+            <h2 class="cs-title">Our Customer Reviews</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <div class="cs-flex-group">
+                  
+                    <span class="cs-name">
+                        Madilyn
+                        
+                    </span>
+                </div>
+                <div class="wrapper">
+                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                    <p class="cs-review">
+Anthony was always a pleasure to be around and was so sweet and generous to myself and my family. Highly recommend if you want a great quality fence done in a short period of time with exceptional workers!
+                    </p>
+                </div>
+                <!--Quote Icon-->
+                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+            </li>
+            <li class="cs-item">
+                <div class="cs-flex-group">
+                
+                    <span class="cs-name">
+                        Anthony
+                 
+                    </span>
+                </div>
+                <div class="wrapper">
+                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                    <p class="cs-review">
+                    Great work done by the owner and his crew, The owner won't leave until customer is satisfied. and work is always done in a fashionable amount of time. 10/10 recommend this company if you choose to get a beautifully done fence put in your yard!
+                    </p>
+                </div>
+                <!--Quote Icon-->
+                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+            </li>
+        </ul>
+    </div>
+</section>
+                                
+                                
+                                
 
   
     {% include 'components/cta.html' %}

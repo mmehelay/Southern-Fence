@@ -8,27 +8,31 @@ eleventyNavigation:
     order: 200
 ---
 
-{% extends "layouts/base.html" %}
+{% extends "layouts/base2.html" %}
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/about.css">
 {% endblock %}
 
 {% block body %}
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">About Us</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
-        </picture>
-
-    </section>
-
+<div id="banner-712">
+    <div class="cs-container">
+        <span class="cs-int-title">About Us</span>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/Aluminum.jpeg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/Aluminum.jpeg">
+        <img loading="lazy" decoding="async" src="/assets/images/Aluminum.jpeg" alt="pills" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+                                
     <!-- ============================================ -->
     <!--                 Side By Side                 -->
     <!-- ============================================ -->
@@ -38,31 +42,31 @@ eleventyNavigation:
             <!-- Left Image Section -->
             <div class="cs-left">
                 <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
+                    <source media="(max-width: 600px)" srcset="/assets/images/About3.jpeg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/About3.jpeg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/About3.jpeg" alt="cabinets" loading="lazy" width="400" height="563">
                 </picture>
                 <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
+                    <source media="(max-width: 600px)" srcset="/assets/images/About2.jpeg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/About2.jpeg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/About2.jpeg" alt="house" loading="lazy" width="400" height="563">
                 </picture>
             </div>
             <!-- Right Content Section-->
             <div class="cs-right">
                 <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
+                <h2 class="cs-title">About Southern Fence</h2>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+                    Southern Fence has been delivering unparalleled customer service and quality since 2005. Our number one focus is to provide top quality fence installation services along with the best custom service the industry has ever seen. We are experienced fence installation experts with over 15 years of experience.
                 </p>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+                   Our number one goal is and will continue to be our quality workmanship. We guarantee that every fence installation will be completed with the highest quality standards. We will take time to listen to your needs and concerns. We will make sure to exceed your expectations in every aspect of the fence installation on your property.
                 </p>
                 <div class="cs-flex-group">
                     <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
+                         At Southern Fence, we measure success not by the fences we build, but by the smiles we create and the trust we earn with every satisfied client
                     </p>
-                    <span class="cs-name">Justin Time</span>
+                    <span class="cs-name">Blake Schwartz</span>
                     <span class="cs-job">CEO-Founder</span>
                     <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
                 </div>
