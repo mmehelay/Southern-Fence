@@ -420,7 +420,8 @@
       transition: transform 0.3s, padding-top 0.3s, top 0.3s;
 
       ul {
-        padding: 0;
+        padding-top: 0px;
+        margin-top: 10px;
         perspective: 700px;
 
         li {
@@ -526,7 +527,6 @@
     .cs-drop-icon {
       width: 0.9375rem;
       height: auto;
-      filter: grayscale(1) brightness(1000%);
       position: absolute;
       top: 50%;
       right: -1.25rem;
