@@ -3,6 +3,7 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
+
     #content-page-713 {
       padding: var(--sectionPadding);
       padding-top: clamp(7rem, 12vw, 12rem);
@@ -12,6 +13,7 @@
       position: relative;
       z-index: 1;
     }
+
     #content-page-713 .cs-container {
       width: 100%;
       max-width: 80rem;
@@ -231,6 +233,11 @@
     body.dark-mode #content-page-713 p {
       color: var(--bodyTextColorWhite);
     }
+
+    body.dark-mode #content-page-713 a {
+      color: var(primary);
+    }
+
     body.dark-mode #content-page-713 h3,
     body.dark-mode #content-page-713 h4 {
       color: var(--bodyTextColorWhite);
@@ -239,7 +246,7 @@
       color: var(--bodyTextColorWhite);
     }
     body.dark-mode #content-page-713 .cs-color,
-    body.dark-mode #content-page-713 p a {
+    body.dark-mode #content-page-713 p {
       color: var(--secondaryLight);
     }
     body.dark-mode #content-page-713 p,
@@ -407,4 +414,5 @@
     background-color: var(--dark);
   }
 }
-                              
+     
+
