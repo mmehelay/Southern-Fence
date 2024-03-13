@@ -6,8 +6,7 @@
     "address": {
         "lineOne": "First Address Line",
         "lineTwo": "Second Address Line",
-        "city": "Denver",
-        "state": "CO",
+        "state": "South Carolina",
         "zip": "80206",
         "mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
     },
