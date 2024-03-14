@@ -6,7 +6,8 @@
     "address": {
         "lineOne": "First Address Line",
         "lineTwo": "Second Address Line",
-        "state": "South Carolina",
+        "city": "Bluffton & Beaufort",
+        "state": "SC",
         "zip": "80206",
         "mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
     },
