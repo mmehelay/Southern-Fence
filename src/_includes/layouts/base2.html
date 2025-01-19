@@ -81,17 +81,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         About Page - About us | Painters and Co.
         -->
         <title>
-            {% if page.url == '/'%}
-                {{ title }}
-                |
-                {{ client.name }}
-                |
-                {{ client.address.city }},
-                {{ client.address.state }}
+            {% if page.url == '/' %}
+                Fence Company Bluffton + Beaufort, SC | Southern Fence
             {% else %}
-                {{ title }}
-                |
-                {{ client.name }}
+                {{ title }} | {{ client.name }}
             {% endif %}
         </title>
     </head>

@@ -100,6 +100,9 @@
     line-height: 1.17857143;
     margin-bottom: 0.41071429em;
   }
+  #hero h3 {
+    color: var(--primary);
+  }
   #hero p {
     font-size: 1.125em;
     line-height: 1.5;
