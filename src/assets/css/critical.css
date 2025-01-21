@@ -102,6 +102,7 @@
   }
   #hero h3 {
     color: var(--primary);
+    margin-bottom: 1em;
   }
   #hero p {
     font-size: 1.125em;
