@@ -3,7 +3,7 @@ title: Guide to Water Sealants For Your Wood Fence
 description: "Wood isn't exactly low-maintenance: Southern Fence explains wood
   sealers on fences, as well as alternative materials if you can't keep up with
   your fence."
-author: Dalton Williams
+author: Daulton Williams
 date: 2025-02-01T14:21:00.000Z
 tags:
   - post
