@@ -14,12 +14,16 @@ If you’re planning a fence in the Lowcountry, height limits vary city to city 
 
 
 
+
+
 | Location               | Front Yard | Side & Rear Yards | Notes                                                               |
 | ---------------------- | ---------- | ----------------- | ------------------------------------------------------------------- |
 | **Charleston**         | 4 ft       | 6 ft              | Historic districts may require BAR review; setbacks apply           |
 | **Hilton Head Island** | 4 ft       | 6 ft              | Permit required for all fences; material restrictions in some zones |
 | **Bluffton**           | 4 ft       | 6 ft              | Zoning approval required; 12 in setback unless shared with neighbor |
 | **Beaufort**           | 4 ft       | 6 ft              | Permit required for most new fences; 1 ft setback standard          |
+
+
 
 ## **Fence Height Requirements in Charleston**
 
